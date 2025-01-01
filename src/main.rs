@@ -37,7 +37,7 @@ fn main() -> Result<(), String> {
             texture_creator,
             current_screen: GameScreen::Home,
             board: None,
-            board_image: image_texture_creatore.load_texture("assets/img/cat.jpg")?,
+            board_image: image_texture_creatore.load_texture("assets/img/me.jpg")?,
             title_font: ttf_context.load_font(Path::new("assets/fonts/pixelify.ttf"), 16)?,
             tile_font: ttf_context
                 .load_font(Path::new("assets/fonts/jb-mono-nerd-bold.ttf"), 22)?,

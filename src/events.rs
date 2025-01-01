@@ -98,7 +98,7 @@ fn handle_events_home(context: &mut ApplicationData, event: Event) {
         Event::KeyDown { keycode, .. } => {
             if let Some(Keycode::Return) = keycode {
                 let mut board = Board::new(3, Point::new(200, 150));
-                // board.scatter();
+                board.scatter();
 
                 context.board = Some(board);
                 context.current_screen = GameScreen::Play;
